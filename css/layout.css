@@ -1,0 +1,94 @@
+body {
+	width: 960px;
+	margin: 0 auto;
+	background-color: white;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+	width: 960px;
+}
+
+html {
+	background-color: grey;
+}
+
+header {
+	width: 640px;
+}
+
+nav {
+	width: 960px;
+	background-color: orange;
+	color: white;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	float: left;
+	list-style-type: none;
+}
+
+nav ul li a {
+	display: block;
+	width: 160px;
+	background-color: orange;
+	color: white;
+	text-align: center;
+}
+
+#form, #home {
+	position: relative;
+	float:left;
+	width: 300px;
+	overflow: hidden;
+}
+
+form {
+	width: 300px;
+	padding-left: 10px;
+	overflow: hidden;
+}
+
+div {
+	padding-top: 10px;
+	padding-left: 10px;
+	margin-bottom: 20px;
+	clear: both;
+}
+
+aside {
+	padding-top: 10px;
+	clear: right;
+	width: 200px;
+	float: right;
+	overflow: hidden;
+}
+
+footer {
+	clear: both;
+	background-color: black;
+	color: white;
+	overflow: hidden;
+}
+
+footer p:first-child {
+	width: 320px;
+	padding-left: 10px;
+}
+
+footer p {
+	position: relative;
+	float: left;
+	width: 200px;
+}
+
+footer p:last-child {
+	width: 360px;
+	float: right;
+}
+	
