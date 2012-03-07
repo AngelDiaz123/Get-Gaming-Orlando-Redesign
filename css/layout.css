@@ -54,7 +54,7 @@ form {
 	overflow: hidden;
 }
 
-#active {
+#active a {
 	background-color: #A84A16;
 }
 
