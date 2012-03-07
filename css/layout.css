@@ -44,17 +44,17 @@ nav ul li a {
 #form, #home {
 	position: relative;
 	float:left;
-	width: 300px;
+	width: 640px;
 	overflow: hidden;
 }
 
 form {
-	width: 300px;
+	width: 640px;
 	padding-left: 10px;
 	overflow: hidden;
 }
 
-#active {
+#active a {
 	background-color: #A84A16;
 }
 
@@ -67,9 +67,8 @@ div {
 
 aside {
 	padding-top: 10px;
-	clear: right;
-	width: 200px;
-	float: right;
+	width: 310px;
+	float: left;
 	overflow: hidden;
 }
 
@@ -92,7 +91,7 @@ footer p {
 }
 
 footer p:last-child {
-	width: 360px;
+	width: 400px;
 	float: right;
 }
 	
