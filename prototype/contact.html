@@ -20,12 +20,12 @@
 		
 		<nav>
 			<ul>
-				<li><a href="xbox.html">Xbox 360</a></li>
-				<li><a href="ps3.html">PlayStation 3</a></li>
-				<li><a href="wii.html">Wii</a></li>
-				<li><a href="handheld_computer.html">PSP and Computer</a></li>
-				<li id="active"><a href="contact.html">Contact Us</a></li>
-				<li><a href="schedule_repair.html">Schedule a repair</a></li>
+				<li id="xbox"><a href="xbox.html">Xbox 360</a></li>
+				<li id="ps3"><a href="ps3.html">PlayStation 3</a></li>
+				<li id="wii"><a href="wii.html">Wii</a></li>
+				<li id="comp"><a href="handheld_computer.html">PSP and Computer</a></li>
+				<li id="contact" id="active"><a href="contact.html">Contact Us</a></li>
+				<li id="schedule"><a href="schedule_repair.html">Schedule a repair</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -34,26 +34,18 @@
 		<h2>Contact Us</h2>
 		
 		<form action="#" method="post">
-			<p>Enter name&#42;<br>
-				<input type="text" name="full_name" value="John Doe" /></p>
+			<p>Enter name&#42;</p>
+			<p><input type="text" name="full_name" value="John Doe" /></p>
 			
-			<br>
+			<p>Enter email address&#42;</p>
+			<p><input type="text" name="email" value="user@domain.com" /></p>
 			
-			<p>Enter email address&#42;<br>
-				<input type="text" name="email" value="user@domain.com" /></p>
+			<p>Enter phone number</p>
+			<p><input type="text" name="full_name" value="(123) 456-7890" /></p>
 			
-			<br>
-			
-			<p>Enter phone number<br>
-				<input type="text" name="full_name" value="(123) 456-7890" /></p>
-			
-			<br>
-			
-			<p>How would you like to be contacted?&#42;<br>
-				<input type="checkbox" name="phone" value="Phone" />Phone<br>
-				<input type="checkbox" name="email" value="Email" />Email</p>
-			
-			<br>
+			<p>How would you like to be contacted?&#42;</p>
+			<p><input type="checkbox" name="phone" value="Phone" />Phone</p>
+			<p><input type="checkbox" name="email" value="Email" />Email</p>
 			
 			<p>Game console with problem&#42;<br>
 				<select name="console">
@@ -65,17 +57,13 @@
 				</select>
 			</p>
 			
-			<br>
-			
-			<p>Problem with console?&#42;<br>
-				<textarea name="problem" rows="7" cols="30">Leave a description of the problem
+			<p>Problem with console?&#42;</p>
+			<p><textarea name="problem" rows="7" cols="30">Leave a description of the problem
 
 1,000 words max</textarea>
 			</p>
 			
-			<br>
-			
-			<button type="button">Submit</button>
+			<p><input type="button" value="SUBMIT"/><p>
 			
 		</form><!-- closes form  -->
 		
