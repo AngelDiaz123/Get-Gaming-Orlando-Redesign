@@ -37,20 +37,20 @@
 		
 		<form action="#" method="post">
 			<p>Enter name&#42;</p>
-			<p><input type="text" name="full_name" placeholder="John Doe" /></p>
+			<p><input type="text" name="full_name" placeholder="John Doe" tabindex="1"/></p>
 			
 			<p>Enter email address&#42;</p>
-			<p><input type="text" name="email" placeholder="user@domain.com" /></p>
+			<p><input type="text" name="email" placeholder="user@domain.com" tabindex="2"/></p>
 			
 			<p>Enter phone number</p>
-			<p><input type="text" name="full_name" placeholder="(123) 456-7890" /></p>
+			<p><input type="text" name="full_name" placeholder="(123) 456-7890" tabindex="3" /></p>
 			
 			<p>How would you like to be contacted?&#42;</p>
-			<p><input id="checkbox" type="checkbox" name="phone" value="Phone" />Phone</p>
-			<p><input type="checkbox" name="email" value="Email" />Email</p>
+			<p><input id="checkbox" type="checkbox" name="phone" value="Phone" tabindex="4" />Phone</p>
+			<p><input type="checkbox" name="email" value="Email" tabindex="5"/>Email</p>
 			
 			<p>Game console with problem&#42;</p>
-				<p><select name="console">
+				<p><select name="console" tabindex="6">
 					<option>Select a console</option>
 					<option>Xbox 360</option>
 					<option>PlayStation 3</option>
@@ -60,12 +60,12 @@
 			</p>
 			
 			<p>Problem with console?&#42;</p>
-			<p><textarea name="problem" rows="7" cols="30">Leave a description of the problem
+			<p><textarea name="problem" rows="7" cols="30" tabindex="7">Leave a description of the problem
 
 1,000 words max</textarea>
 			</p>
 			
-			<p><input id="button" type="button" value="SUBMIT"/><p>
+			<p><input id="button" type="button" value="SUBMIT" tabindex="8"/><p>
 			
 		</form><!-- closes form  -->
 		
