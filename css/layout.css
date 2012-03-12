@@ -36,7 +36,7 @@ hgroup {
 	height: 70px;
 	width: 960px;
 	margin: 0;
-	background: url("../img/header.jpg");
+	background: url("../img/header2.jpg");
 }
 
 hgroup h1 a {
@@ -167,7 +167,7 @@ h3.border {
 	background: url("../img/border.png") no-repeat;
 }
 
-article {
+article.content {
 	margin: 35px 55px;
 	font-family: Arial;
 	width: 680px;
@@ -214,7 +214,7 @@ a {
 }
 
 form {
-	width: 640px;
+	width: 630px;
 	padding-left: 10px;
 	overflow: hidden;
 }
