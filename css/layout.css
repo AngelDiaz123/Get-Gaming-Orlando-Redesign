@@ -2,17 +2,16 @@
 p, dd, dt, ol, ul, li, h1, h2, h3, h4, h5, h6, a {
 	padding : 0;
 	margin : 0;
-	font-size : 100%;
+	font-size : 14px;
 	text-align : left;
 	line-height : 1 em;
 	font-weight : normal;
-	font-family :  Arial, Helvetica, "Times New Roman", "Helvetica neue";
+	font-family : Arial, Helvetica, "Times New Roman", "Helvetica neue";
 	list-style-type: none;
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
@@ -49,7 +48,7 @@ hgroup h1 a {
 hgroup h2 {
 	float: right;
 	text-indent: -999999px;
-} 
+}
 
 /*nav*/
 nav ul {
@@ -118,16 +117,19 @@ nav ul li a {
 	background: url("../img/orange_nav.jpg") -800px 0;
 }
 
-header {
-	width: 960px;
-}
-
-header {
-	width: 640px;
-}
-
+/*document*/
 h2 {
+	margin-top: 10px;
 	text-align: center;
+	height: 50px;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 24px;
+	background-image: url("../img/xbox_banner.png");
+}
+
+#xheader {
+	background-image: url('../img/xbox_banner.png');
 }
 
 h3 {
@@ -135,6 +137,7 @@ h3 {
 	height: 20px;
 	padding-top: 30px;
 	clear: both;
+	font-size: 18px;
 }
 
 h3.border {
@@ -144,35 +147,52 @@ h3.border {
 article {
 	margin: 35px 55px;
 	font-family: Arial;
+	font-size: 14px;
 	width: 680px;
 	float: right;
 	overflow: hidden;
 }
 
-img.xbox {
+img.xbox, img.psp, img.class, img.ps, img.wii, img.comp {
 	margin: -10px 0 40px 35px;
 	float: left;
-	background-color: red;
-	overflow: hidden;
 }
 
+/*extra link*/
 #help {
 	clear: both;
 	float: right;
 	margin: 30px 10px;
 }
 
-#form, #home {
-	position: relative;
+/*form and home*/
+#header_home {
+	width: 550px;
+}
+
+#form, #home, #first_home, #third_home {
+	display: block;
 	float:left;
-	width: 640px;
+	width: 550px;
 	overflow: hidden;
+	margin-left: 0;
+	margin-right: 10px;
+}
+
+#second_home {
+	width: 320px;
+	float: left;
+	margin-left: 0;
 }
 
 form {
 	width: 640px;
-	padding-left: 10px;
+	padding-left: 20px;
 	overflow: hidden;
+}
+
+ {
+	color: red;
 }
 
 #active a {
@@ -187,37 +207,42 @@ div {
 }
 
 aside {
-	padding-top: 10px;
-	width: 310px;
+	padding: 20px 40px;
+	width: 300px;
 	float: left;
 	overflow: hidden;
 	margin-bottom: 30px;
+	background: url("../img/side_bar.png") no-repeat 10px 10px;
 }
 
 a {
 	color: #993801;
 }
 
+/* footer */
 footer {
 	clear: both;
 	background-color: black;
 	color: white;
-	overflow: hidden;
+	height: 40px;
+	padding-top: 20px;
 }
 
 footer p:first-child {
-	width: 320px;
+	display: block;
+	width: 220px;
+	float: left;
 	padding-left: 10px;
 }
 
 footer p {
-	position: relative;
+	font-size: 12px;
 	float: left;
-	width: 200px;
+	width: 390px;
+	text-align: center;
 }
 
 footer p:last-child {
-	width: 400px;
+	width: 310px;
 	float: right;
 }
-	
