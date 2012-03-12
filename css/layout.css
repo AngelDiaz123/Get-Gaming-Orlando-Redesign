@@ -159,7 +159,7 @@ img.xbox {
 	overflow: hidden;
 }
 
-#help {
+#help, #help2 {
 	clear: both;
 	float: right;
 	margin: 30px 10px;
