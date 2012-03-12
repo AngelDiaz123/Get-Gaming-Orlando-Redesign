@@ -118,6 +118,30 @@ nav ul li a {
 	background: url("../img/orange_nav.jpg") -800px 0;
 }
 
+#xbox.active {
+	background-image: url("../img/orange_nav.jpg");
+}
+
+#ps3.active {
+	background: url("../img/orange_nav.jpg") -160px 0;
+}
+
+#wii.active {
+	background: url("../img/orange_nav.jpg") -320px 0;
+}
+
+#comp.active {
+	background: url("../img/orange_nav.jpg") -480px 0;
+}
+
+#contact.active {
+	background: url("../img/orange_nav.jpg") -640px 0;
+}
+
+#schedule.active {
+	background: url("../img/orange_nav.jpg") -800px 0;
+}
+
 /*body*/
 div {
 	padding-top: 10px;
