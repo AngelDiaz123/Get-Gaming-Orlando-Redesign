@@ -169,12 +169,24 @@ a {
 	color: #993801;
 }
 
+#home {
+	padding-left: 20px;
+}
+
+#first_home, #third_home {
+	width: 580px;
+}
+
+#second_home{
+	width: 320px;
+}
+
 /*form elements*/
 #form, #home {
-	position: relative;
 	float:left;
-	width: 640px;
-	overflow: hidden;
+	width: 630px;
+	clear: both;
+	margin-top: 20px;
 }
 
 form {
