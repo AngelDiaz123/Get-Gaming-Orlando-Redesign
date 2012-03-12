@@ -43,11 +43,15 @@
 			<p><input type="text" name="email" placeholder="user@domain.com" tabindex="2"/></p>
 			
 			<p>Enter phone number</p>
-			<p><input type="text" name="full_name" placeholder="(123) 456-7890" tabindex="3" /></p>
+			<p>
+			(<input type="text" name="phone" placeholder="123" tabindex="3" maxlength="3" size="2"/>)
+			<input type="text" name="phone" placeholder="456" tabindex="4" maxlength="3" size="2" />
+			- <input type="text" name="phone" placeholder="7890" tabindex="5" maxlength="4" size="3" />
+			</p>
 			
 			<p>How would you like to be contacted?&#42;</p>
-			<p><input id="checkbox" type="checkbox" name="phone" value="Phone" tabindex="4" />Phone</p>
-			<p><input type="checkbox" name="email" value="Email" tabindex="5"/>Email</p>
+			<p><input id="checkbox" type="checkbox" name="phone" value="Phone" tabindex="6" />Phone</p>
+			<p><input type="checkbox" name="email" value="Email" tabindex="7"/>Email</p>
 			
 			<p>Game console with problem&#42;</p>
 				<p><select name="console" tabindex="6">
