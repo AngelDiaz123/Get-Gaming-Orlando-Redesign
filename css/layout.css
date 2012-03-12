@@ -259,20 +259,25 @@ footer {
 	background-color: black;
 	color: white;
 	overflow: hidden;
+	height: 20px;
+	padding-top: 5px;
+	font-size: 10px;
 }
 
 footer p:first-child {
 	width: 320px;
 	padding-left: 10px;
+	text-align: left;
 }
 
 footer p {
 	position: relative;
 	float: left;
-	width: 200px;
+	width: 300px;
+	text-align: center;
 }
 
 footer p:last-child {
-	width: 400px;
+	width: 240px;
 	float: right;
 }
