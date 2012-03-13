@@ -36,7 +36,7 @@ hgroup {
 	height: 70px;
 	width: 960px;
 	margin: 0;
-	background: url("../img/header2.jpg");
+	background: url("../img/header.jpg");
 }
 
 hgroup h1 a {
@@ -57,7 +57,6 @@ nav ul {
 	width: 960px;
 	margin: 0;
 	padding: 0;
-	text-indent: -99999px;
 }
 
 nav ul li {
@@ -71,76 +70,48 @@ nav ul li a {
 	float: left;
 	height: 32px;
 	width: 160px;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding-top: 5px;
 }
 
-#xbox {
-	background-image: url("../img/grey_nav.png");
+.nav_comp, .nav_comp a, .nav_comp .active a {
+	width: 170px;
 }
 
-#ps3 {
-	background: url("../img/grey_nav.png") -160px 0;
-}
-#wii {
-	background: url("../img/grey_nav.png") -320px 0;
-}
-#comp {
-	background: url("../img/grey_nav.png") -480px 0;
-}
-#contact {
-	background: url("../img/grey_nav.png") -640px 0;
+.nav_contact, .nav_contact a, .nav_comp .active a{
+	width: 150px;
 }
 
-#schedule {
-	background: url("../img/grey_nav.png") -800px 0;
+.nav .active a, .nav a:hover, .nav_comp a:hover, .nav_contact a:hover {
+	/* graident per browser */
+	/* Safari 4-5, Chrome 1-9 */ 
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F95902), to(#CE6111)); 
+	
+	/* Safari 5.1, Chrome 10+ */ background: -webkit-linear-gradient(top, #F95902, #CE6111);
+	
+	/* Firefox 3.6+ */ background: -moz-linear-gradient(top, #F95902, #CE6111);
+	
+	/* IE 10 */ background: -ms-linear-gradient(top, #F95902, #CE6111);
+	
+	/* Opera 11.10+ */ background: -o-linear-gradient(top, #F95902, #CE6111);
 }
 
-#xbox a:hover {
-	background-image: url("../img/orange_nav.jpg");
+.nav a, .nav_comp a, .nav_contact a {
+	/* graident per browser */
+	/* Safari 4-5, Chrome 1-9 */ 
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#7B797A), to(#343434)); 
+	
+	/* Safari 5.1, Chrome 10+ */ background: -webkit-linear-gradient(top, #7B797A, #343434);
+	
+	/* Firefox 3.6+ */ background: -moz-linear-gradient(top, #7B797A, #343434);
+	
+	/* IE 10 */ background: -ms-linear-gradient(top, #7B797A, #343434);
+	
+	/* Opera 11.10+ */ background: -o-linear-gradient(top, #7B797A, #343434);
 }
 
-#ps3 a:hover {
-	background: url("../img/orange_nav.jpg") -160px 0;
-}
-
-#wii a:hover {
-	background: url("../img/orange_nav.jpg") -320px 0;
-}
-
-#comp a:hover {
-	background: url("../img/orange_nav.jpg") -480px 0;
-}
-
-#contact a:hover {
-	background: url("../img/orange_nav.jpg") -640px 0;
-}
-
-#schedule a:hover {
-	background: url("../img/orange_nav.jpg") -800px 0;
-}
-
-#xbox.active {
-	background-image: url("../img/orange_nav.jpg");
-}
-
-#ps3.active {
-	background: url("../img/orange_nav.jpg") -160px 0;
-}
-
-#wii.active {
-	background: url("../img/orange_nav.jpg") -320px 0;
-}
-
-#comp.active {
-	background: url("../img/orange_nav.jpg") -480px 0;
-}
-
-#contact.active {
-	background: url("../img/orange_nav.jpg") -640px 0;
-}
-
-#schedule.active {
-	background: url("../img/orange_nav.jpg") -800px 0;
-}
 
 /*body*/
 div {
@@ -163,8 +134,21 @@ h3 {
 	font-size: 18px;
 }
 
+#xheader,#pheader, #wheader, #pheader, #cheader {
+	background: url("../img/xbox_banner.png") no-repeat -10px -10px;
+	text-indent: 300px;
+	padding-top: 15px;
+	height: 90px;
+	width: 960px;
+}
+
 h3.border {
 	background: url("../img/border.png") no-repeat;
+}
+
+#door_image {
+	float: left;
+	padding: 20px;
 }
 
 article.content {
@@ -197,13 +181,22 @@ a {
 	padding-left: 20px;
 }
 
-#first_home, #third_home {
-	width: 580px;
+#home_article {
+	padding-right: 30px;
 }
 
-#second_home{
-	width: 320px;
+article p {
+	padding-top: 10px;
 }
+
+article #door_image + p + p {
+	clear: both;
+}
+
+article #door_image + p {
+	padding-top: 40px;
+}
+
 
 /*form elements*/
 #form, #home {
@@ -217,6 +210,30 @@ form {
 	width: 630px;
 	padding-left: 10px;
 	overflow: hidden;
+}
+span, .input {
+	color: red;
+}
+
+.input {
+	font-size: 12px;
+}
+
+h2#contact_title {
+	width: 125px;
+	text-align: left;
+	float: left;
+}
+
+h2#schedule_title {
+	text-align: left;
+	width: 180px;
+	float: left;
+}
+
+.input + p {
+	margin-bottom: 10px;
+	clear: both;
 }
 
 form input, form select {
@@ -232,12 +249,32 @@ form input, form select {
 }
 
 #charge {
-	padding-top: 10px;
+	padding-top: 20px;
 }
 
 #button {
+	margin-top:20px;
+	width: 100px;
+	height: 25px;
 	background-color: orange;
 	color: white;
+	font-size: 16px;
+	
+	/* graident per browser */
+	/* Safari 4-5, Chrome 1-9 */ 
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1a82f7), to(#2F2727)); 
+	
+	/* Safari 5.1, Chrome 10+ */ background: -webkit-linear-gradient(top, #F95902, #CE6111);
+	
+	/* Firefox 3.6+ */ background: -moz-linear-gradient(top, #F95902, #CE6111);
+	
+	/* IE 10 */ background: -ms-linear-gradient(top, #F95902, #CE6111);
+	
+	/* Opera 11.10+ */ background: -o-linear-gradient(top, #F95902, #CE6111);
+	
+	/*rounded corners*/
+	-moz-border-radius: 15px 12px;
+	border-radius: 15px 12px;
 }
 
 /*sidebar*/
@@ -251,6 +288,23 @@ aside {
 	overflow: hidden;
 	margin-bottom: 30px;
 	background: url("../img/side_bar.png") no-repeat;
+}
+
+#phone, #map, #hours, #sidebar, #address {
+	padding-bottom: 20px;
+	font-weight: bold;
+}
+
+sidebar {
+	float: left;
+}
+
+table {
+	border: none;
+}
+
+.time {
+	text-align: right;
 }
 
 /*footer*/
