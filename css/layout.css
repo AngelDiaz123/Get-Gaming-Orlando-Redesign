@@ -84,19 +84,6 @@ nav ul li a {
 	width: 150px;
 }
 
-.nav .active a, .nav a:hover, .nav_comp a:hover, .nav_contact a:hover {
-	/* graident per browser */
-	/* Safari 4-5, Chrome 1-9 */ 
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F95902), to(#CE6111)); 
-	
-	/* Safari 5.1, Chrome 10+ */ background: -webkit-linear-gradient(top, #F95902, #CE6111);
-	
-	/* Firefox 3.6+ */ background: -moz-linear-gradient(top, #F95902, #CE6111);
-	
-	/* IE 10 */ background: -ms-linear-gradient(top, #F95902, #CE6111);
-	
-	/* Opera 11.10+ */ background: -o-linear-gradient(top, #F95902, #CE6111);
-}
 
 .nav a, .nav_comp a, .nav_contact a {
 	/* graident per browser */
@@ -112,6 +99,19 @@ nav ul li a {
 	/* Opera 11.10+ */ background: -o-linear-gradient(top, #7B797A, #343434);
 }
 
+#active_xbox a, #active_comp a, #active_contact a, #active_ps3 a, #active_wii a, #active_schedule a, .nav a:hover, .nav_comp a:hover, .nav_contact a:hover {
+	/* graident per browser */
+	/* Safari 4-5, Chrome 1-9 */ 
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F95902), to(#CE6111)); 
+	
+	/* Safari 5.1, Chrome 10+ */ background: -webkit-linear-gradient(top, #F95902, #CE6111);
+	
+	/* Firefox 3.6+ */ background: -moz-linear-gradient(top, #F95902, #CE6111);
+	
+	/* IE 10 */ background: -ms-linear-gradient(top, #F95902, #CE6111);
+	
+	/* Opera 11.10+ */ background: -o-linear-gradient(top, #F95902, #CE6111);
+}
 
 /*body*/
 div {
