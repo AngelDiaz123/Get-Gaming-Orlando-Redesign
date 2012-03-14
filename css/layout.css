@@ -198,6 +198,10 @@ a {
 	padding-right:30px;
 }
 
+#home_article p {
+	font-size: 18px;
+}
+
 article p {
 	padding-top:10px;
 }
@@ -207,7 +211,7 @@ article #door_image + p + p {
 }
 
 article #door_image + p {
-	padding-top:40px;
+	padding-top:27px;
 }
 
 #form,#home {
