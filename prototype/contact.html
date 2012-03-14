@@ -7,6 +7,20 @@
 	<!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
+	<script type="text/javascript">
+	
+		/***********************************************
+		* Textarea Maxlength script- © Dynamic Drive (www.dynamicdrive.com)
+		* This notice must stay intact for legal use.
+		* Visit http://www.dynamicdrive.com/ for full source code
+		***********************************************/
+		
+		function ismaxlength(obj){
+		var mlength=obj.getAttribute? parseInt(obj.getAttribute("maxlength")) : ""
+		if (obj.getAttribute && obj.value.length>mlength)
+		obj.value=obj.value.substring(0,mlength)
+		}
+	</script>
 </head>
 
 <body>
@@ -44,9 +58,9 @@
 			
 			<p>Enter phone number</p>
 			<p>
-			(<input type="text" name="phone" placeholder="123" tabindex="3" maxlength="3" size="2"/>)
-			<input type="text" name="phone" placeholder="456" tabindex="4" maxlength="3" size="2" />
-			- <input type="text" name="phone" placeholder="7890" tabindex="5" maxlength="4" size="3" />
+			(<input type="text" name="phone" placeholder="123" tabindex="3" maxlength="3" size="3"/>)
+			<input type="text" name="phone" placeholder="456" tabindex="4" maxlength="3" size="3" />
+			- <input type="text" name="phone" placeholder="7890" tabindex="5" maxlength="4" size="4" />
 			</p>
 			
 			<p>How would you like to be contacted?<span>&#42;</span></p>
@@ -64,9 +78,7 @@
 			</p>
 			
 			<p>Problem with console?<span>&#42;</span></p>
-			<p><textarea name="problem" rows="7" cols="30" tabindex="7">Leave a description of the problem
-
-1,000 words max</textarea>
+			<p><textarea name="problem" rows="7" cols="30" tabindex="7" placeholder="Leave a description of the problem		1,000 words max" maxlength="1000" onkeyup="return ismaxlength(this)"></textarea>
 			</p>
 			
 			<p><input id="button" type="button" value="SUBMIT" tabindex="8"/><p>
