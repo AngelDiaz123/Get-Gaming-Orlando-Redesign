@@ -272,7 +272,7 @@ form input,form select {
 	-moz-border-radius: 15px 12px;
 	border-radius: 15px 12px;
 	/* IE support */
-	behavior:url("css/border-radius.htc");
+	behavior:url("../css/border-radius.htc");
 	border-radius: 15px 12px;
 }
 
