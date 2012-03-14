@@ -135,7 +135,7 @@ h3 {
 }
 
 #xheader,#pheader, #wheader, #pheader, #cheader {
-	background: url("../img/xbox_banner.png") no-repeat -10px -10px;
+	background: url("../img/header_comp.png") no-repeat -10px -10px;
 	text-indent: 300px;
 	padding-top: 15px;
 	height: 90px;
