@@ -173,8 +173,7 @@ article.content {
 	width:680px;
 }
 
-img.xbox {
-	background-color:red;
+img.xbox, .ps, .psp, .comp, .wii {
 	float:left;
 	margin:-10px 0 40px 35px;
 	overflow:hidden;
