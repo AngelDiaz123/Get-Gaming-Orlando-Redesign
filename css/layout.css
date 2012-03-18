@@ -133,13 +133,13 @@ div {
 }
 
 h2 {
-	font-size:150%;
+	font-size:1.5em;
 	text-align:center;
 }
 
 h3 {
 	clear:both;
-	font-size:112.5%;
+	font-size:1.125em;
 	height:20px;
 	padding-top:30px;
 	text-align:center;
@@ -167,7 +167,7 @@ h3.border {
 article.content {
 	float:right;
 	font-family:Arial;
-	font-size:87.5%;
+	font-size:.875em;
 	margin:35px 55px;
 	overflow:hidden;
 	width:680px;
@@ -231,7 +231,7 @@ span,.input {
 }
 
 .input {
-	font-size:75%;
+	font-size:.75em;
 }
 
 h2#contact_title {
@@ -273,7 +273,7 @@ form input,form select {
 	height:25px;
 	background-color:orange;
 	color:white;
-	font-size:100%;
+	font-size:1em;
 	
 	/* graident per browser */
 	/* Safari 4-5, Chrome 1-9 */ 
