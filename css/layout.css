@@ -173,10 +173,11 @@ article.content {
 	width:680px;
 }
 
-img.xbox, .ps, .psp, .comp, .wii {
+h3 + img.xbox, h3 + img.ps, h3 + img.psp, h3 + img.comp, h3 + img.wii {
 	float:left;
 	margin:-10px 0 40px 35px;
 	overflow:hidden;
+	box-shadow:5px 5px 2px #888;
 }
 
 #help, #help2 {
@@ -198,7 +199,7 @@ a {
 }
 
 #home_article p {
-	font-size: 18px;
+	font-size:1.125em;
 }
 
 article p {
@@ -213,6 +214,63 @@ article #door_image + p {
 	padding-top:27px;
 }
 
+#cta {
+	margin-top: 40px;
+	width:580px;
+	height:162px;
+	background-image:url("../img/cta.png");
+}
+
+#cta_title {
+	color:white;
+	width:580px;
+	height:30px;
+	padding-top:3px;
+	font-size:1.125em;
+	text-indent:50px;
+}
+
+#cta a {
+	color:white;
+	font-size:1.25em;
+	text-decoration:none;
+	position:relative;
+	float:right;
+	top:80px;
+	right:20px;
+	width:240px;
+	height:30px;
+	text-align:center;
+	padding-top:2px;
+	
+	/* graident per browser */
+	/* Safari 4-5, Chrome 1-9 */ 
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F95902), to(#CE6111)); 
+	
+	/* Safari 5.1, Chrome 10+ */ 
+	background: -webkit-linear-gradient(top, #F95902, #CE6111);
+	
+	/* Firefox 3.6+ */ 
+	background: -moz-linear-gradient(top, #F95902, #CE6111);
+	
+	/* IE 10 */ 
+	background: -ms-linear-gradient(top, #F95902, #CE6111);
+	
+	/* Opera 11.10+ */ 
+	background: -o-linear-gradient(top, #F95902, #CE6111);
+	
+	/* IE 6-9 */
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#F95902, endColorstr=#CE6111);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#F95902, endColorstr=#CE6111)";
+	
+	/*rounded corners*/
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	
+	box-shadow:5px 5px 2px #888;
+}
+
+
 #form,#home {
 	clear:both;
 	float:left;
@@ -226,7 +284,7 @@ form {
 	width:630px;
 }
 
-span,.input {
+span, .input {
 	color:red;
 }
 
@@ -310,6 +368,8 @@ form input,form select {
 	/* IE support */
 	behavior:url("../css/border-radius.htc");
 	border-radius: 15px 12px;
+	
+	box-shadow:5px 5px 2px #888;
 }
 
 /* sidebar */
@@ -372,3 +432,6 @@ footer p:last-child {
 	float:right;
 	width:240px;
 }
+
+/* responsive design */
+
