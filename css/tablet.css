@@ -346,71 +346,63 @@ footer {
 	padding-top:5px;
 }
 
-footer p:first-child {
-	padding-left:10px;
-	text-align:left;
-}
-
-footer p {
-	float:left;
-	position:relative;
-	text-align:center;
-	width:300px;
-}
-
-footer p:last-child {
-	float:right;
-	width:260px;
-	text-align:right;
-}
-
-/* responsive design */
+/* responsive design */	
 /*------------------------------------------------------------------*/
-/* 1024+ */
-@media screen and (min-width: 960px) {
+/* 760-959 */
+@media screen and (min-width:768px) and (max-width:959px) {
+	
+	#home_aside {
+		display:none;
+	}
 	
 	#container {
-		margin:0 auto;
-		width:960px;
+		width:768px;
 	}
 	
 	/* header */
 	hgroup {
-		background:url("../img/header.jpg");
-		height:70px;
-		width:960px;
+		background:url("../img/header2.png") -20px 0;
+		height:75px;
+		width:768px;
 	}
 	hgroup h1 a {
 		height:70px;	
-		width:495px;
+		width:395px;
 	}
 	
 	/* nav */
+	nav {
+		clear:both;
+		font-size:14px;
+	}
+	
 	nav ul {
 		height:30px;
 	}
 	
 	nav ul li {
 		float:left;
-		width:160px;
+		width:127px;
+		height:30px;
 	}
 	
 	nav ul li a {
 		float:left;
-		width:160px;
+		width:130px;
+		height:30px;
 	}
 		
 	.nav_comp, .nav_comp a, .nav_comp .active a {
-		width:170px;
+		width:140px;
 	}
 	
 	.nav_contact, .nav_contact a, .nav_comp .active a {
-		width:150px;
+		width:120px;
 	}
 	
 	/* form and home div settings */
 	#form, #home {
-		width: 600px;
+		width: 410px;
 		margin-bottom:20px;
 		padding-left:10px;
 		padding-top:10px;
@@ -430,8 +422,8 @@ footer p:last-child {
 	#xheader, #pheader, #wheader, #pheader, #cheader {
 		height:90px;
 		padding-top:15px;
-		text-indent:300px;
-		width:960px;
+		text-indent:250px;
+		width:768px;
 	}
 	
 	#door_image {
@@ -439,9 +431,10 @@ footer p:last-child {
 	}
 
 	article.content {
+		float:right;
 		font-size:.875em;
-		margin:35px 55px;
-		width:680px;
+		margin:15px 35px;
+		width:490px;
 	}
 	
 	h3 + img.xbox, h3 + img.ps, h3 + img.psp, h3 + img.comp, h3 + img.wii {
@@ -457,7 +450,12 @@ footer p:last-child {
 	}
 	
 	#home_article {
+		width:700px;
 		padding-right:30px;
+	}
+	
+	#header_home {
+		width:768px;
 	}
 	
 	#home_article p {
@@ -474,6 +472,7 @@ footer p:last-child {
 	
 	#cta {
 		margin-top:40px;
+		margin-left:70px;
 		width:580px;
 		height:162px;
 	}
@@ -504,17 +503,17 @@ footer p:last-child {
 	footer p:first-child {
 		padding-left:10px;
 		text-align:left;
+		float:left;
 	}
 	
 	footer p {
 		float:left;
-		position:relative;
-		text-align:center;
-		width:300px;
+		text-align:left;
+		width:150px;
 	}
 	
 	footer p:last-child {
-		float:right;
+		float:left;
 		width:260px;
 		text-align:right;
 	}
