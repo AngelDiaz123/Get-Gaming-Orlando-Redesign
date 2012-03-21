@@ -4,14 +4,10 @@
 	<meta charset="utf-8" />
 	<link rel="stylesheet" type="text/css" href="../css/layout.css" />
 	<title>Get Gaming! - Orlando Game Console Repair - Contact Us</title>
-	<!--[if lt IE 7]>
-<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
-<![endif]-->
-	<!--[if lt IE 8]>
-<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
-<![endif]-->
 	<!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
 <![endif]-->
 	<script type="text/javascript">
 	
@@ -30,122 +26,124 @@
 </head>
 
 <body>
+	<div id="container">
+		<header>
+			<hgroup>
+				<h1><a href="index.html">Get Gaming Orlando</a></h1><!-- logo -->
+				
+				<h2>Where consoles come to get a new life</h2><!-- tagline -->
+			</hgroup>
+			
+			<nav>
+				<ul>
+					<li class="nav"><a href="xbox.html">Xbox 360</a></li>
+					<li class="nav"><a href="ps3.html">PlayStation 3</a></li>
+					<li class="nav"><a href="wii.html">Wii</a></li>
+					<li class="nav_comp"><a href="handheld_computer.html">PSP and Computer</a></li>
+					<li class="nav_contact" id="active_contact"><a href="contact.html">Contact Us</a></li>
+					<li class="nav"><a href="schedule_repair.html">Schedule A Repair</a></li>
+				</ul>
+			</nav>
+		</header>
 	
-	<header>
-		<hgroup>
-			<h1><a href="index.html">Get Gaming Orlando</a></h1><!-- logo -->
-			
-			<h2>Where consoles come to get a new life</h2><!-- tagline -->
-		</hgroup>
-		
-		<nav>
-			<ul>
-				<li class="nav"><a href="xbox.html">Xbox 360</a></li>
-				<li class="nav"><a href="ps3.html">PlayStation 3</a></li>
-				<li class="nav"><a href="wii.html">Wii</a></li>
-				<li class="nav_comp"><a href="handheld_computer.html">PSP and Computer</a></li>
-				<li class="nav_contact" id="active_contact"><a href="contact.html">Contact Us</a></li>
-				<li class="nav"><a href="schedule_repair.html">Schedule A Repair</a></li>
-			</ul>
-		</nav>
-	</header>
 	
-	<div id="form">
-		<h2 id="contact_title">Contact Us</h2>
-		<p class="input">*needed input fields</p>
-		<p>Fill out form and a team member will get back to you</p>
+		<div id="form">
+			<h2 id="contact_title">Contact Us</h2>
+			<p class="input">*needed input fields</p>
+			<p>Fill out form and a team member will get back to you</p>
+			
+			<form action="#" method="post">
+				<p>Enter name<span>&#42;</span></p>
+				<p><input type="text" name="full_name" placeholder="John Doe" tabindex="1"/></p>
+				
+				<p>Enter email address<span>&#42;</span></p>
+				<p><input type="text" name="email" placeholder="user@domain.com" tabindex="2"/></p>
+				
+				<p>Enter phone number</p>
+				<p>
+				(<input type="text" name="phone" placeholder="123" tabindex="3" maxlength="3" size="3"/>)
+				<input type="text" name="phone" placeholder="456" tabindex="4" maxlength="3" size="3" />
+				- <input type="text" name="phone" placeholder="7890" tabindex="5" maxlength="4" size="4" />
+				</p>
+				
+				<p>How would you like to be contacted?<span>&#42;</span></p>
+				<p><input id="checkbox" type="checkbox" name="phone" value="Phone" tabindex="6" />Phone</p>
+				<p><input type="checkbox" name="email" value="Email" tabindex="7"/>Email</p>
+				
+				<p>Game console with problem<span>&#42;</span></p>
+					<p><select name="console" tabindex="6">
+						<option>Select a console</option>
+						<option>Xbox 360</option>
+						<option>PlayStation 3</option>
+						<option>Wii</option>
+						<option>PSP/PSP Go</option>
+					</select>
+				</p>
+				
+				<p>Problem with console?<span>&#42;</span></p>
+				<p><textarea name="problem" rows="7" cols="30" tabindex="7" placeholder="Leave a description of the problem		1,000 words max" maxlength="1000" onkeyup="return ismaxlength(this)"></textarea>
+				</p>
+				
+				<p><input id="button" type="button" value="SUBMIT" tabindex="8"/><p>
+				
+			</form><!-- closes form  -->
+			
+		</div><!-- closes content -->
 		
-		<form action="#" method="post">
-			<p>Enter name<span>&#42;</span></p>
-			<p><input type="text" name="full_name" placeholder="John Doe" tabindex="1"/></p>
+		<aside>
+			<p>Come in and see us at</p>
+			<p id="map"><a href="http://maps.google.com/maps?hl=en&gs_nf=1&tok=1ENLRDXZaGQb--b1Ggbe3Q&cp=49&gs_id=5s&xhr=t&bav=on.2,or.r_gc.r_pw.r_qf.,cf.osb&biw=686&bih=711&q=320+South+Bumby+Ave+Suite+3+++++Orlando,+FL+32803&um=1&ie=UTF-8&hq=&hnear=0x88e77ad838d0b3bd:0xaa1341baa73a2aa1,320+S+Bumby+Ave+%233,+Orlando,+FL+32803&gl=us&ei=t0NQT8_fIouhtwewsPjKDQ&sa=X&oi=geocode_result&ct=title&resnum=1&sqi=2&ved=0CB8Q8gEwAA" id="address">320 South Bumby Ave Suite<br>Orlando, FL 32803 <img id="sidebar" src="../img/map.png" alt="map" /></a></p>
 			
-			<p>Enter email address<span>&#42;</span></p>
-			<p><input type="text" name="email" placeholder="user@domain.com" tabindex="2"/></p>
+			<p>Or call us</p>
+			<p id="phone">(407)-963-8019</p>
 			
-			<p>Enter phone number</p>
-			<p>
-			(<input type="text" name="phone" placeholder="123" tabindex="3" maxlength="3" size="3"/>)
-			<input type="text" name="phone" placeholder="456" tabindex="4" maxlength="3" size="3" />
-			- <input type="text" name="phone" placeholder="7890" tabindex="5" maxlength="4" size="4" />
-			</p>
+			<p>Hours of operations:</p>
 			
-			<p>How would you like to be contacted?<span>&#42;</span></p>
-			<p><input id="checkbox" type="checkbox" name="phone" value="Phone" tabindex="6" />Phone</p>
-			<p><input type="checkbox" name="email" value="Email" tabindex="7"/>Email</p>
-			
-			<p>Game console with problem<span>&#42;</span></p>
-				<p><select name="console" tabindex="6">
-					<option>Select a console</option>
-					<option>Xbox 360</option>
-					<option>PlayStation 3</option>
-					<option>Wii</option>
-					<option>PSP/PSP Go</option>
-				</select>
-			</p>
-			
-			<p>Problem with console?<span>&#42;</span></p>
-			<p><textarea name="problem" rows="7" cols="30" tabindex="7" placeholder="Leave a description of the problem		1,000 words max" maxlength="1000" onkeyup="return ismaxlength(this)"></textarea>
-			</p>
-			
-			<p><input id="button" type="button" value="SUBMIT" tabindex="8"/><p>
-			
-		</form><!-- closes form  -->
-		
-	</div><!-- closes content -->
-	
-	<aside>
-		<p>Come in and see us at</p>
-		<p id="map"><a href="http://maps.google.com/maps?hl=en&gs_nf=1&tok=1ENLRDXZaGQb--b1Ggbe3Q&cp=49&gs_id=5s&xhr=t&bav=on.2,or.r_gc.r_pw.r_qf.,cf.osb&biw=686&bih=711&q=320+South+Bumby+Ave+Suite+3+++++Orlando,+FL+32803&um=1&ie=UTF-8&hq=&hnear=0x88e77ad838d0b3bd:0xaa1341baa73a2aa1,320+S+Bumby+Ave+%233,+Orlando,+FL+32803&gl=us&ei=t0NQT8_fIouhtwewsPjKDQ&sa=X&oi=geocode_result&ct=title&resnum=1&sqi=2&ved=0CB8Q8gEwAA" id="address">320 South Bumby Ave Suite<br>Orlando, FL 32803 <img id="sidebar" src="../img/map.png" alt="map" /></a></p>
-		
-		<p>Or call us</p>
-		<p id="phone">(407)-963-8019</p>
-		
-		<p>Hours of operations:</p>
-		
-		<table id="hours">
-			  <tr>
-				<td>Monday</td>
-				<td>&nbsp;</td>
-				<td class="time">12pm-5pm</td>
-			  </tr>
-			  <tr>
-				<td>Tuesday</td>
-				<td>&nbsp;</td>
-				<td class="time">10am-7pm</td>
-			  </tr>
-			  <tr>
-				<td>Wednesday</td>
-				<td>&nbsp;</td>
-				<td class="time">10am-7pm</td>
-			  </tr>
-			  <tr>
-				<td>Thursday</td>
-				<td>&nbsp;</td>
-				<td class="time">10am-7pm</td>
-			  </tr>
-			  <tr>
-				<td>Friday</td>
-				<td>&nbsp;</td>
-				<td class="time">10am-7pm</td>
-			  </tr>
-			  <tr>
-				<td>Saturday</td>
-				<td>&nbsp;</td>
-				<td class="time">12pm-5pm</td>
-			  </tr>
-			  <tr>
-				<td>Sunday</td>
-				<td>&nbsp;</td>
-				<td class="time">CLOSED</td>
-			  </tr>
-		</table>
-    </aside>
-     
-	<footer>
-    	<p>copyright &copy; 2012 Get Gaming Orlando</p>
-    	<p>Call Us (407) 963-8019</p>
-    	<p>Find Us 320 S Bumby Ave Suite 3, Orlando, FL 32803</p>
-    </footer>
+			<table id="hours">
+				  <tr>
+					<td>Monday</td>
+					<td>&nbsp;</td>
+					<td class="time">12pm-5pm</td>
+				  </tr>
+				  <tr>
+					<td>Tuesday</td>
+					<td>&nbsp;</td>
+					<td class="time">10am-7pm</td>
+				  </tr>
+				  <tr>
+					<td>Wednesday</td>
+					<td>&nbsp;</td>
+					<td class="time">10am-7pm</td>
+				  </tr>
+				  <tr>
+					<td>Thursday</td>
+					<td>&nbsp;</td>
+					<td class="time">10am-7pm</td>
+				  </tr>
+				  <tr>
+					<td>Friday</td>
+					<td>&nbsp;</td>
+					<td class="time">10am-7pm</td>
+				  </tr>
+				  <tr>
+					<td>Saturday</td>
+					<td>&nbsp;</td>
+					<td class="time">12pm-5pm</td>
+				  </tr>
+				  <tr>
+					<td>Sunday</td>
+					<td>&nbsp;</td>
+					<td class="time">CLOSED</td>
+				  </tr>
+			</table>
+		</aside>
+		 
+		<footer>
+			<p>copyright &copy; 2012 Get Gaming Orlando</p>
+			<p>Call Us (407) 963-8019</p>
+			<p>Find Us 320 S Bumby Ave Suite 3, Orlando, FL 32803</p>
+		</footer>
+	</div><!-- container div -->
 	
 </body>
 </html> 

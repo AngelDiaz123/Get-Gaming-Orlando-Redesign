@@ -7,6 +7,9 @@ p, dd, dt, ol, ul, li, h1, h2, h3, h4, h5, h6, a {
 	margin:0;
 	padding:0;
 	text-align:left;
+}
+
+img {
 	border:none;
 }
 
@@ -18,67 +21,53 @@ table {
 	border-collapse:collapse;
 	border-spacing:0;
 }
-
+/* styles */
 html {
 	background-image:url("../img/bg.png");
 }
 
 body {
+	margin:0;
+}
+
+#container {
 	background-color:#f8f7f6;
 	margin:0 auto;
-	width:960px;
+	padding:0;
+	
 }
 
 /* header */
-hgroup {
-	background:url("../img/header.jpg");
-	height:70px;
+hgroup {	
 	margin:0;
-	width:960px;
 }
 
 hgroup h1 a {
 	float:left;
-	height:70px;
 	text-indent:-99999px;
-	width:495px;
 }
 
 hgroup h2 {
-	float:right;
 	text-indent:-999999px;
 }
 
+/* nav */
 nav ul {
-	clear:both;
 	margin:0;
 	padding:0;
-	width:960px;
 }
 
 nav ul li {
-	float:left;
-	height:32px;
+	height:30px;
 	overflow:hidden;
-	width:160px;
 }
 
 nav ul li a {
 	color:#FFF;
-	float:left;
-	height:32px;
+	height:30px;
 	padding-top:5px;
 	text-align:center;
 	text-decoration:none;
-	width:160px;
-}
-
-.nav_comp, .nav_comp a, .nav_comp .active a {
-	width:170px;
-}
-
-.nav_contact, .nav_contact a, .nav_comp .active a {
-	width:150px;
 }
 
 .nav a, .nav_comp a, .nav_contact a {
@@ -126,34 +115,22 @@ nav ul li a {
 }
 
 /* form and content */
-div {
+#form, #content {
 	clear:both;
-	margin-bottom:20px;
-	padding-left:10px;
-	padding-top:10px;
 }
 
 h2 {
-	font-size:1.5em;
 	text-align:center;
 }
 
 h3 {
 	clear:both;
-	font-size:1.125em;
-	height:20px;
-	padding-top:30px;
 	text-align:center;
 }
 
 #xheader, #pheader, #wheader, #pheader, #cheader {
-	margin-left:-10px;
 	clear:both;
 	background:url("../img/header_comp.png") no-repeat 0 -10px;
-	height:90px;
-	padding-top:15px;
-	text-indent:300px;
-	width:960px;
 }
 
 h3.border {
@@ -162,21 +139,16 @@ h3.border {
 
 #door_image {
 	float:left;
-	padding:20px;
 }
 
 article.content {
 	float:right;
 	font-family:Arial;
-	font-size:.875em;
-	margin:35px 55px;
 	overflow:hidden;
-	width:680px;
 }
 
 h3 + img.xbox, h3 + img.ps, h3 + img.psp, h3 + img.comp, h3 + img.wii {
 	float:left;
-	margin:-10px 0 40px 35px;
 	overflow:hidden;
 	box-shadow:5px 5px 2px #888;
 }
@@ -184,65 +156,28 @@ h3 + img.xbox, h3 + img.ps, h3 + img.psp, h3 + img.comp, h3 + img.wii {
 #help, #help2 {
 	clear:both;
 	float:right;
-	margin:30px 10px;
 }
 
 a {
 	color:#993801;
 }
 
-#home {
-	padding-left:20px;
-}
-
-#home_article {
-	padding-right:30px;
-}
-
-#home_article p {
-	font-size:1.125em;
-}
-
-article p {
-	padding-top:10px;
-}
-
 article #door_image + p + p {
 	clear:both;
 }
 
-article #door_image + p {
-	padding-top:27px;
-}
-
 #cta {
-	margin-top:40px;
-	width:580px;
-	height:162px;
 	background-image:url("../img/cta.png");
 }
 
 #cta_title {
 	color:white;
-	width:580px;
-	height:30px;
-	padding-top:3px;
-	font-size:1.125em;
-	text-indent:50px;
 }
 
 #cta a {
 	color:white;
-	font-size:1.25em;
 	text-decoration:none;
-	position:relative;
-	float:right;
-	top:80px;
-	right:20px;
-	width:240px;
-	height:30px;
 	text-align:center;
-	padding-top:2px;
 	
 	/* graident per browser */
 	/* Safari 4-5, Chrome 1-9 */ 
@@ -275,22 +210,15 @@ article #door_image + p {
 #form,#home {
 	clear:both;
 	float:left;
-	margin-top:20px;
-	width:630px;
 }
 
 form {
 	overflow:hidden;
 	padding-left:10px;
-	width:630px;
 }
 
 span, .input {
 	color:red;
-}
-
-.input {
-	font-size:.75em;
 }
 
 h2#contact_title {
@@ -422,7 +350,6 @@ footer {
 footer p:first-child {
 	padding-left:10px;
 	text-align:left;
-	width:320px;
 }
 
 footer p {
@@ -434,8 +361,330 @@ footer p {
 
 footer p:last-child {
 	float:right;
-	width:240px;
+	width:260px;
+	text-align:right;
 }
 
 /* responsive design */
+/*------------------------------------------------------------------*/
+/* 1024+ */
+@media (min-width: 960px) {
+	
+	#container {
+		margin:0 auto;
+		width:960px;
+	}
+	
+	/* header */
+	hgroup {
+		background:url("../img/header.jpg");
+		height:70px;
+		width:960px;
+	}
+	hgroup h1 a {
+		height:70px;	
+		width:495px;
+	}
+	
+	/* nav */
+	nav ul li {
+		float:left;
+		width:160px;
+	}
+	
+	nav ul li a {
+		float:left;
+		width:160px;
+	}
+		
+	.nav_comp, .nav_comp a, .nav_comp .active a {
+		width:170px;
+	}
+	
+	.nav_contact, .nav_contact a, .nav_comp .active a {
+		width:150px;
+	}
+	
+	/* form and home div settings */
+	#form, #home {
+		width: 600px;
+		margin-bottom:20px;
+		padding-left:10px;
+		padding-top:10px;
+	}
+	
+	/* content */
+	h2 {
+		font-size:1.5em;
+	}
+	
+	h3 {
+		font-size:1.125em;
+		height:20px;
+		padding-top:30px;
+	}
+	
+	#xheader, #pheader, #wheader, #pheader, #cheader {
+		height:90px;
+		padding-top:15px;
+		text-indent:300px;
+		width:960px;
+	}
+	
+	#door_image {
+		padding:20px;
+	}
+
+	article.content {
+		font-size:.875em;
+		margin:35px 55px;
+		width:680px;
+	}
+	
+	h3 + img.xbox, h3 + img.ps, h3 + img.psp, h3 + img.comp, h3 + img.wii {
+		margin:-10px 0 40px 35px;
+	}
+	
+	#help, #help2 {
+		margin:30px 10px;
+	}
+	
+	#home {
+		padding-left:20px;
+	}
+	
+	#home_article {
+		padding-right:30px;
+	}
+	
+	#home_article p {
+		font-size:1.125em;
+	}
+	
+	article p {
+		padding-top:10px;
+	}
+	
+	article #door_image + p {
+		padding-top:27px;
+	}
+	
+	#cta {
+		margin-top:40px;
+		width:580px;
+		height:162px;
+	}
+	
+	#cta_title {
+		width:580px;
+		height:30px;
+		padding-top:3px;
+		font-size:1.125em;
+		text-indent:50px;
+	}
+	
+	#cta a {
+		font-size:1.25em;
+		position:relative;
+		float:right;
+		top:80px;
+		right:20px;
+		width:240px;
+		height:30px;
+		padding-top:2px;
+	
+	.input {
+		font-size:.75em;
+	}
+	
+	/* footer */
+	footer p:first-child {
+		padding-left:10px;
+		text-align:left;
+	}
+	
+	footer p {
+		float:left;
+		position:relative;
+		text-align:center;
+		width:300px;
+	}
+	
+	footer p:last-child {
+		float:right;
+		width:260px;
+		text-align:right;
+	}
+}
+	
+/*------------------------------------------------------------------*/
+/* 760-959 */
+@media (min-width:768px) and (max-width:959px) {
+	html {
+		width:959px;
+	}
+	
+	#container {
+		width:768px;
+	}
+	
+	/* header */
+	hgroup {
+		background:url("../img/header.jpg");
+		height:100px;
+		width:768px;
+	}
+	hgroup h1 a {
+		height:70px;	
+		width:395px;
+	}
+	
+	/* nav */
+	nav {
+		clear:both;
+	}
+	
+	nav ul {
+		width:760px;
+	}
+	
+	nav ul li {
+		clear:both;
+		float:none;
+		width:127px;
+		height:30px;
+	}
+	
+	nav ul li a {
+		width:127px;
+		height:30px;
+	}
+		
+	.nav_comp, .nav_comp a, .nav_comp .active a {
+		width:137px;
+	}
+	
+	.nav_contact, .nav_contact a, .nav_comp .active a {
+		width:117px;
+	}
+	
+	/* form and home div settings */
+	#form, #home {
+		width: 600px;
+		margin-bottom:20px;
+		padding-left:10px;
+		padding-top:10px;
+	}
+	
+	/* content */
+	h2 {
+		font-size:1.5em;
+	}
+	
+	h3 {
+		font-size:1.125em;
+		height:20px;
+		padding-top:30px;
+	}
+	
+	#xheader, #pheader, #wheader, #pheader, #cheader {
+		height:90px;
+		padding-top:15px;
+		text-indent:200px;
+		width:760px;
+	}
+	
+	#door_image {
+		padding:20px;
+	}
+
+	article.content {
+		float:right;
+		font-size:.875em;
+		margin:15px 35px;
+		width:280px;
+	}
+	
+	h3 + img.xbox, h3 + img.ps, h3 + img.psp, h3 + img.comp, h3 + img.wii {
+		margin:-10px 0 40px 35px;
+	}
+	
+	#help, #help2 {
+		margin:30px 10px;
+	}
+	
+	#home {
+		padding-left:20px;
+	}
+	
+	#home_article {
+		padding-right:30px;
+	}
+	
+	#home_article p {
+		font-size:1.125em;
+	}
+	
+	article p {
+		padding-top:10px;
+	}
+	
+	article #door_image + p {
+		padding-top:27px;
+	}
+	
+	#cta {
+		margin-top:40px;
+		width:580px;
+		height:162px;
+	}
+	
+	#cta_title {
+		width:580px;
+		height:30px;
+		padding-top:3px;
+		font-size:1.125em;
+		text-indent:50px;
+	}
+	
+	#cta a {
+		font-size:1.25em;
+		position:relative;
+		float:right;
+		top:80px;
+		right:20px;
+		width:240px;
+		height:30px;
+		padding-top:2px;
+	
+	.input {
+		font-size:.75em;
+	}
+	
+	/* footer */
+	footer p:first-child {
+		padding-left:10px;
+		text-align:left;
+	}
+	
+	footer p {
+		float:left;
+		position:relative;
+		text-align:center;
+		width:300px;
+	}
+	
+	footer p:last-child {
+		float:right;
+		width:260px;
+		text-align:right;
+	}
+}
+
+/*------------------------------------------------------------------*/
+/* 320-759 */
+@media (min-width:320) and (max-width:768px) {
+
+}
+
 
